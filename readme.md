@@ -1,5 +1,7 @@
 # Code generator
 
+Originally inspired by https://github.com/krlove/code-generator
+
 ## Installation
 
 Require the package using composer
