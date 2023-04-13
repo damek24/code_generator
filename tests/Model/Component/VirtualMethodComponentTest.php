@@ -11,8 +11,8 @@ class VirtualMethodComponentTest extends TestCase
     public function testVirtual()
     {
         $v = new VirtualMethodComponent('test', AccessEnum::PUBLIC);
-        $this->assertEquals(['@method public function test();'], $v->toLines());
+        $this->assertEquals(['@method public test();'], $v->toLines());
         $v = new VirtualMethodComponent('test', AccessEnum::PUBLIC, abstract: true);
-        $this->assertEquals(['@method abstract public function test();'], $v->toLines());
+        $this->assertEquals(['@method abstract public test();'], $v->toLines());
     }
 }
